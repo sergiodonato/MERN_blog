@@ -4,13 +4,20 @@
 ##MongoDB:
  Banco de dados ñ relacional, faz query's e retornos utilizando JSON;
 
- MongoDB Atlas
+ MongoDB Atlas -> url: https://www.mongodb.com/atlas/database
+ comand: npm install mongodb
+ mongodb+srv://<username>:<password>@cluster0.g85bgkd.mongodb.net/?retryWrites=true&w=majority
+ mongodb+srv://<username>:<password>@cluster0.g85bgkd.mongodb.net/
+ user: sergiodcdn, password: 5Kws0UuNbVXKzVXN
  -Database
  -Collections
  -Documents
 
 ##Express:
  Framework para backend, agilizando a criação de API's REST, gerencia rotas e requisições;
+
+ Uso de Thunder Client:
+
 
  API - Express (pasta: ./src)
  -models
