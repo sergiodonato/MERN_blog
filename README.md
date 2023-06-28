@@ -5,9 +5,9 @@
  Banco de dados ñ relacional, faz query's e retornos utilizando JSON;
 
  MongoDB Atlas -> url: https://www.mongodb.com/atlas/database
- comand: npm install mongodb
- mongodb+srv://<username>:<password>@cluster0.g85bgkd.mongodb.net/?retryWrites=true&w=majority
- mongodb+srv://<username>:<password>@cluster0.g85bgkd.mongodb.net/
+ // comand: npm install mongodb
+ // mongodb+srv://<username>:<password>@cluster0.g85bgkd.mongodb.net/?retryWrites=true&w=majority
+ // mongodb+srv://<username>:<password>@cluster0.g85bgkd.mongodb.net/
  user: sergiodcdn, password: 5Kws0UuNbVXKzVXN
  -Database
  -Collections
@@ -27,6 +27,7 @@
     -user.controller.js : função callback das rotas
  -services
  -database
+    -db.js : para conectar com banco de dados, uso de mongoose
  -middlewares
 
 ##React:
