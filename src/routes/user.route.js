@@ -1,21 +1,26 @@
 // -- para criar rotas fora do arquivo principal:
-const route = require('express').Router();
+import express from 'express'
+const router = express.Router()
+// const route = require('express').Router();
 
-const userController = require('../controllers/user.controller')
-const {validId, validUser} = require("../middlewares/global.middlewares")
+import userController from '../controllers/user.controller.js'
+// const userController = require('../controllers/user.controller')
+
+import {validId, validUser} from "../middlewares/global.middlewares.js"
+// const {validId, validUser} = require("../middlewares/global.middlewares")
 
 // -- a função de callback ficará desmenbrada, dentro de controllers
-route.post("/", userController.create)
+router.post("/", userController.create)
 
 // -- rota para pegar todos usuários por id:
-route.get('/', userController.findAll)
+router.get('/', userController.findAll)
 
 // -- rota para pegar usuários com seleção id:
-route.get('/:id', validId, validUser, userController.findById)
+router.get('/:id', validId, validUser, userController.findById)
 
 // -- rota para editar campos dos id:
-route.patch('/:id', validId, validUser, userController.update)
+router.patch('/:id', validId, validUser, userController.update)
 
 
 // -- exportação da rota em si:
-module.exports = route
+export default router

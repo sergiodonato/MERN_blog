@@ -1,11 +1,9 @@
-// -- exportações:
-const express = require('express')
-const connetcDatabase = require('./src/database/db')
-// -- criação da rota com bdd:
-const userRoute = require('./src/routes/user.route')
+import express from 'express'
+import connetcDatabase from './src/database/db.js'
+import userRoute from './src/routes/user.route.js'
 
-const app = express()
 const port = 3000
+const app = express()
 
 connetcDatabase()
 app.use(express.json())

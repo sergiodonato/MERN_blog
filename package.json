@@ -1,6 +1,7 @@
 {
   "name": "mern_blog",
   "version": "1.0.0",
+  "type": "module",
   "description": "API for SPA blog notícias",
   "main": "index.js",
   "scripts": {
