@@ -6,9 +6,7 @@
 
  MongoDB Atlas -> url: https://www.mongodb.com/atlas/database
  // comand: npm install mongodb
- // mongodb+srv://<username>:<password>@cluster0.g85bgkd.mongodb.net/?retryWrites=true&w=majority
- // mongodb+srv://<username>:<password>@cluster0.g85bgkd.mongodb.net/
- user: sergiodcdn, password: 5Kws0UuNbVXKzVXN
+ user: root69, password: root69
  -Database
  -Collections
  -Documents
@@ -21,14 +19,17 @@
 
  API - Express (pasta: ./src)
  -models
+    -User.js : parte da rota com bDD's
  -routes
     -user.route.js : cria rotas
  -controllers
     -user.controller.js : função callback das rotas
  -services
+    -user.services.js : começo da rota com bDD's
  -database
     -db.js : para conectar com banco de dados, uso de mongoose
  -middlewares
+    -global.middlewares.js : coletania para funções que são mais útilizadas
 
 ##React:
  Framework para o frontend, acelera a produtividade do front, pois utilizar basicamente Javascript(JS);
@@ -54,3 +55,6 @@
     // Name - um id da rota
 
     // Function(Callback) - responsável por executar algum comando
+
+
+
