@@ -1,13 +1,20 @@
 import express from 'express'
 import connetcDatabase from './src/database/db.js'
-import userRoute from './src/routes/user.route.js'
+import dotenv from "dotenv"
 
-const port = 3000
+import userRoute from './src/routes/user.route.js'
+import authRoute from './src/routes/auth.route.js'
+
+
+dotenv.config()
+
+const port = process.env.PORT || 3000
 const app = express()
 
 connetcDatabase()
 app.use(express.json())
 app.use('/user', userRoute)
+app.use('/auth', authRoute)
 
 
 app.listen(port, () => console.log(`Servidor rodando na porta ${port}`))

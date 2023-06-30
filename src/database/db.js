@@ -6,7 +6,11 @@ import mongoose from "mongoose"
 const connetcDatabase = () => {
     console.log("Perando a conecção com o bD")
 
-    mongoose.connect('mongodb+srv://root69:root69@cluster0.hduktsv.mongodb.net/', {useNewUrlParser: true, useUnifiedTopology: true}).then(() => console.log("MongoDB Atlas Connected")).catch((error) => console.log(error))
+    mongoose
+        .connect( process.env.MONGODB_URI,
+            {useNewUrlParser: true, useUnifiedTopology: true})
+        .then(() => console.log("MongoDB Atlas Connected"))
+        .catch((error) => console.log(error))
 }
 
 export default connetcDatabase
