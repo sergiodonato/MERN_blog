@@ -25,15 +25,19 @@
  API - Express (pasta: ./src)
  -models
     -User.js : parte da rota com bDD's
-    -News.js :  
+    -News.js : sobre as postagens e devidas interações
  -routes
     -user.route.js : cria rotas
     -auth.route.js : rota login
+    -news.route.js : 
  -controllers
     -user.controller.js : função callback das rotas
+    -auth.controller.js :
+    -news.controller.js :
  -services
     -user.services.js : começo da rota com bDD's
     -auth.service.js : login + token de uso
+    -news.service.js : 
  -database
     -db.js : para conectar com banco de dados, uso de mongoose
       .uso de .env (biblioteca: npm i dotenv)
