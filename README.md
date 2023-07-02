@@ -38,11 +38,13 @@
     -user.services.js : começo da rota com bDD's
     -auth.service.js : login + token de uso
     -news.service.js : 
- -database
-    -db.js : para conectar com banco de dados, uso de mongoose
-      .uso de .env (biblioteca: npm i dotenv)
- -middlewares
-    -global.middlewares.js : coletania para funções que são mais útilizadas
+ .database
+    ..db.js : para conectar com banco de dados, uso de mongoose
+      -uso de .env (biblioteca: npm i dotenv)
+
+ .middlewares : coletania para funções que são mais útilizadas
+    .global.middlewares.js : validadores de id e usuário
+    .auth.middlewares.js : validador de token para ação no site
 
 ##React:
  Framework para o frontend, acelera a produtividade do front, pois utilizar basicamente Javascript(JS);
