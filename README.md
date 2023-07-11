@@ -21,7 +21,7 @@
    url: https://www.npmjs.com/package/jsonwebtoken
    url: https://www.md5hashgenerator.com/
 
-
+ Swagger - documentando a API
  API - Express (pasta: ./src)
  -models
     -User.js : parte da rota com bDD's
